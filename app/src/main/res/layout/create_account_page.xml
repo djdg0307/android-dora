@@ -39,49 +39,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="First name"
-        android:id="@+id/firstname"
-        android:textSize="17dp"
-        android:textColor="#ff6a6a6a"
-        android:layout_toStartOf="@+id/doratext"
-        android:layout_above="@+id/lasttextfield"
-        android:layout_alignLeft="@+id/addreporttext"
-        android:layout_alignStart="@+id/addreporttext" />
-
-    <EditText
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/firsttextfield"
-        android:layout_marginTop="28dp"
-        android:layout_below="@+id/dorafulltext"
-        android:layout_alignRight="@+id/addreporttext"
-        android:layout_alignEnd="@+id/addreporttext" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Last name"
-        android:id="@+id/lastname"
+        android:text="Name"
+        android:id="@+id/name"
         android:textSize="17sp"
-        android:textIsSelectable="false"
         android:textColor="#ff6a6a6a"
         android:layout_above="@+id/emailtextfield"
-        android:layout_alignLeft="@+id/firstname"
-        android:layout_alignStart="@+id/firstname" />
+        android:layout_alignLeft="@+id/addreporttext" />
 
     <EditText
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/lasttextfield"
-        android:layout_below="@+id/firsttextfield"
-        android:layout_alignLeft="@+id/firsttextfield"
-        android:layout_alignStart="@+id/firsttextfield"
-        android:textSize="15sp" />
+        android:id="@+id/nametextfield"
+        android:hint="Last name, First Name"
+        android:textColorHint="#ff8b8b8b"
+        android:textSize="15sp"
+        android:layout_above="@+id/emailtextfield"
+        android:layout_alignLeft="@+id/emailtextfield"
+        android:layout_alignStart="@+id/emailtextfield" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -93,8 +69,8 @@
         android:textIsSelectable="false"
         android:textColor="#ff6a6a6a"
         android:layout_above="@+id/passwordtextfield"
-        android:layout_alignLeft="@+id/lastname"
-        android:layout_alignStart="@+id/lastname" />
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name" />
 
     <EditText
         android:layout_width="150dp"
@@ -102,10 +78,10 @@
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/emailtextfield"
-        android:layout_below="@+id/lasttextfield"
-        android:layout_alignLeft="@+id/lasttextfield"
-        android:layout_alignStart="@+id/lasttextfield"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:layout_above="@+id/passwordtextfield"
+        android:layout_alignLeft="@+id/passwordtextfield"
+        android:layout_alignStart="@+id/passwordtextfield" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -125,10 +101,10 @@
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/passwordtextfield"
-        android:layout_below="@+id/emailtextfield"
-        android:layout_alignLeft="@+id/emailtextfield"
-        android:layout_alignStart="@+id/emailtextfield"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/addreporttext"
+        android:layout_alignEnd="@+id/addreporttext" />
 
     <Button
         android:layout_width="wrap_content"
@@ -143,8 +119,8 @@
         android:textAlignment="center"
         android:textColor="#ffffffff"
         android:textSize="25sp"
+        android:layout_marginTop="77dp"
         android:layout_below="@+id/password"
-        android:layout_marginTop="30dp"
         android:layout_alignLeft="@+id/dorafulltext"
         android:layout_alignStart="@+id/dorafulltext" />
 

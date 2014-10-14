@@ -109,7 +109,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Sign in"
         android:id="@+id/signinlink"
-        android:textColor="#ff6a6a6a"
+        android:textColor="#ffff9d37"
         android:onClick="onClick"
         android:clickable="true"
         android:layout_alignBottom="@+id/addreporttext"
